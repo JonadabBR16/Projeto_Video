@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e476b;
+    color: #333;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #006eff;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.85); /* Corrigido a vírgula para espaço */
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1A73E8;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px; /* Corrigido o padding para mais simetria */
+    font-size: 16px; /* Corrigido o valor do font-size */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #125cc8;
+}
+
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.video-item { /* Corrigido de 'videos-item' para 'video-item' */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.video-item:hover { /* Corrigido de 'videos-item' para 'video-item' */
+    transform: scale(1.02);
+}
+
+.video-item h3 { /* Corrigido de 'videos-item' para 'video-item' */
+    color: #1A73E8;
+    margin-bottom: 10px;
+}
+
+.video-item p { /* Corrigido de 'videos-item' para 'video-item' */
+    margin-bottom: 8px;
+    color: #555;
+}
